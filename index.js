@@ -2,6 +2,8 @@ const Manager = require('./lib/Manager');
 const Engineer = require('./lib/Engineer');
 const Intern = require('./lib/Intern');
 
+const templateData = require("./src/page-template");
+
 const inquirer = require('inquirer')
 
 //----------------------------------------------------------------------------------------
@@ -49,7 +51,8 @@ const promptManager = () => {
             return promptIntern();
         }
         else {
-            console.log(team);
+            console.log(templateData(team));
+            return;
         }
     }) 
 }
@@ -96,7 +99,8 @@ const promptEngineer = () => {
             return promptIntern();
         }
         else {
-            console.log(team);
+            console.log(templateData(team));
+            return;
         }
     }) 
 }
@@ -143,9 +147,10 @@ const promptIntern = () => {
             return promptIntern();
         }
         else {
-            console.log(team);
+            console.log(templateData(team));
+            return;
         }
     }) 
 }
 
-promptManager();
+promptManager()
