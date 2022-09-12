@@ -4,7 +4,8 @@ const Intern = require('./lib/Intern');
 
 const templateData = require("./src/page-template");
 
-const inquirer = require('inquirer')
+const inquirer = require('inquirer');
+const fs = require('fs');
 
 //----------------------------------------------------------------------------------------
 let team = [];
@@ -51,7 +52,7 @@ const promptManager = () => {
             return promptIntern();
         }
         else {
-            console.log(templateData(team));
+            generatePage(templateData(team));
             return;
         }
     }) 
@@ -99,7 +100,7 @@ const promptEngineer = () => {
             return promptIntern();
         }
         else {
-            console.log(templateData(team));
+            generatePage(templateData(team));
             return;
         }
     }) 
@@ -147,10 +148,20 @@ const promptIntern = () => {
             return promptIntern();
         }
         else {
-            console.log(templateData(team));
+            generatePage(templateData(team));
             return;
         }
     }) 
+}
+
+const generatePage = (html) => {
+    fs.writeFile("./dist/index.html", html, (err) => {
+        if (err) {
+            console.log("AN ERROR OCCURED");
+            throw err;
+        }
+        console.log("File Created! Check the dist folder to view it!");
+    })
 }
 
 promptManager()
