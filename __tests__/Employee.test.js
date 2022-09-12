@@ -15,5 +15,4 @@ test ('functions from employee can be called and return values', () => {
     expect(testEmployee.getId()).toEqual(testEmployee.id);
     expect(testEmployee.getEmail()).toEqual(testEmployee.email);
     expect(testEmployee.getRole()).toEqual("Employee");
-    
 });
