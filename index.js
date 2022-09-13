@@ -12,6 +12,15 @@ let team = [];
 
 // Add Manager
 const promptManager = () => {
+    console.log(`
+<><><><><><><><><><><><><><><><><><><><><><><><><><>
+
+    Please answer prompts to create a webpage
+    with employee information
+    We will begin with the team Manager
+
+<><><><><><><><><><><><><><><><><><><><><><><><><><>
+    `);
     inquirer.prompt([
         {
             type: "text",
@@ -104,6 +113,13 @@ const promptManager = () => {
 
 // Add Engineer
 const promptEngineer = () => {
+    console.log(`
+<><><><><><><><><><><><><><><><><><><><><><><><><><>
+    
+    Please answer prompts regarding Engineer
+    
+<><><><><><><><><><><><><><><><><><><><><><><><><><>
+        `);
     inquirer.prompt([
         {
             type: "text",
@@ -196,6 +212,13 @@ const promptEngineer = () => {
 
 // Add Intern
 const promptIntern = () => {
+    console.log(`
+<><><><><><><><><><><><><><><><><><><><><><><><><><>
+        
+    Please answer prompts regarding Intern
+        
+<><><><><><><><><><><><><><><><><><><><><><><><><><>
+            `);
     inquirer.prompt([
         {
             type: "text",
@@ -292,7 +315,14 @@ const generatePage = (html) => {
             console.log("AN ERROR OCCURED");
             throw err;
         }
-        console.log("File Created! Check the dist folder to view it!");
+        console.log(`
+<><><><><><><><><><><><><><><><><><><><><><><><><><>
+            
+    File created! to view check the index.html
+    file located at "./dist/index.html"
+            
+<><><><><><><><><><><><><><><><><><><><><><><><><><>
+                `);
     })
 }
 
