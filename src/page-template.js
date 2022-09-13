@@ -40,9 +40,9 @@ const generateCards = (team) => {
                     <div class="card-title text-light px-3 pt-1">${team[i].getRole()}</div>
                     <div class="card-body text-center bg-secondary">
                         <h5 class="card-title text-light">${team[i].getName()}</h5>
-                            <p class="card-text text-light">Employee ID: ${team[i].getId()}</p>
-                            <a href="mailto: ${team[i].getEmail()}" class="card-text text-light">Email: ${team[i].getEmail()}</a>
-                            <p class="card-text text-light">Office Number ${team[i].getOffice()}</p>
+                            <div class="card-text text-light">Employee ID: ${team[i].getId()}</div>
+                            <div><a href="mailto: ${team[i].getEmail()}" target="_blank" class="card-text text-light">Email: ${team[i].getEmail()}</a></div>
+                            <div class="card-text text-light">Office Number ${team[i].getOffice()}</div>
                     </div>
                 </div>
             </div>
@@ -55,9 +55,9 @@ const generateCards = (team) => {
                     <div class="card-title text-light px-3 pt-1">${team[i].getRole()}</div>
                     <div class="card-body text-center bg-secondary">
                         <h5 class="card-title text-light">${team[i].getName()}</h5>
-                            <p class="card-text text-light">Employee ID: ${team[i].getId()}</p>
-                            <a href="mailto: ${team[i].getEmail()}" class="card-text text-light">Email: ${team[i].getEmail()}</a>
-                            <a href="https://github.com/${team[i].getGithub()}" target="_blank" class="card-text text-light">Github: ${team[i].getGithub()}</a>
+                            <div class="card-text text-light">Employee ID: ${team[i].getId()}</div>
+                            <div><a href="mailto: ${team[i].getEmail()}" target="_blank" class="card-text text-light">Email: ${team[i].getEmail()}</a></div>
+                            <div><a href="https://github.com/${team[i].getGithub()}" target="_blank" class="card-text text-light">Github: ${team[i].getGithub()}</a></div>
                     </div>
                 </div>
             </div>
@@ -70,9 +70,9 @@ const generateCards = (team) => {
                     <div class="card-title text-light px-3 pt-1">${team[i].getRole()}</div>
                     <div class="card-body text-center bg-secondary">
                         <h5 class="card-title text-light">${team[i].getName()}</h5>
-                            <p class="card-text text-light">Employee ID: ${team[i].getId()}</p>
-                            <a href="mailto: ${team[i].getEmail()}" class="card-text text-light">Email: ${team[i].getEmail()}</a>
-                            <p class="card-text text-light">School: ${team[i].getSchool()}</p>
+                            <div class="card-text text-light">Employee ID: ${team[i].getId()}</div>
+                            <div><a href="mailto: ${team[i].getEmail()}" target="_blank" class="card-text text-light">Email: ${team[i].getEmail()}</a></div>
+                            <div class="card-text text-light">School: ${team[i].getSchool()}</div>
                     </div>
                 </div>
             </div>
