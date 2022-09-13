@@ -41,7 +41,7 @@ const generateCards = (team) => {
                     <div class="card-body text-center bg-secondary">
                         <h5 class="card-title text-light">${team[i].getName()}</h5>
                             <p class="card-text text-light">Employee ID: ${team[i].getId()}</p>
-                            <p class="card-text text-light">Email: ${team[i].getEmail()}</p>
+                            <a href="mailto: ${team[i].getEmail()}" class="card-text text-light">Email: ${team[i].getEmail()}</a>
                             <p class="card-text text-light">Office Number ${team[i].getOffice()}</p>
                     </div>
                 </div>
@@ -56,7 +56,7 @@ const generateCards = (team) => {
                     <div class="card-body text-center bg-secondary">
                         <h5 class="card-title text-light">${team[i].getName()}</h5>
                             <p class="card-text text-light">Employee ID: ${team[i].getId()}</p>
-                            <p class="card-text text-light">Email: ${team[i].getEmail()}</p>
+                            <a href="mailto: ${team[i].getEmail()}" class="card-text text-light">Email: ${team[i].getEmail()}</a>
                             <a href="https://github.com/${team[i].getGithub()}" class="card-text text-light">Github: ${team[i].getGithub()}</a>
                     </div>
                 </div>
@@ -71,7 +71,7 @@ const generateCards = (team) => {
                     <div class="card-body text-center bg-secondary">
                         <h5 class="card-title text-light">${team[i].getName()}</h5>
                             <p class="card-text text-light">Employee ID: ${team[i].getId()}</p>
-                            <p class="card-text text-light">Email: ${team[i].getEmail()}</p>
+                            <a href="mailto: ${team[i].getEmail()}" class="card-text text-light">Email: ${team[i].getEmail()}</a>
                             <p class="card-text text-light">School: ${team[i].getSchool()}</p>
                     </div>
                 </div>
