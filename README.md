@@ -13,7 +13,8 @@ takes user input regarding employees and creates a HTML file that will display t
 run >npm i and then enter command >node index.js on command line from project's root directory
 
 ## Usage
-Simply answer prompts and check the specified location when application is finished running
+Simply answer prompts and check the specified location when application is finished running.
+
 sample of the application running can be viewed [here](https://drive.google.com/file/d/1U-wY1mN58ghzcpkD220CrHqd9MdBbOKN/view)
 
 ## Tests
