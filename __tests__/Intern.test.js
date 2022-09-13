@@ -16,5 +16,6 @@ test ('functions from Intern can be called and return values', () => {
     expect(testIntern.getName()).toEqual(testIntern.name);
     expect(testIntern.getId()).toEqual(testIntern.id);
     expect(testIntern.getEmail()).toEqual(testIntern.email);
+    expect(testIntern.getSchool()).toEqual(testIntern.school);
     expect(testIntern.getRole()).toEqual("Intern");
 });

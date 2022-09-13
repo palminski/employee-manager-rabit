@@ -15,5 +15,6 @@ test ('functions from Engineer can be called and return values', () => {
     expect(testEngineer.getName()).toEqual(testEngineer.name);
     expect(testEngineer.getId()).toEqual(testEngineer.id);
     expect(testEngineer.getEmail()).toEqual(testEngineer.email);
+    expect(testEngineer.getGithub()).toEqual(testEngineer.github);
     expect(testEngineer.getRole()).toEqual("Engineer");
 });

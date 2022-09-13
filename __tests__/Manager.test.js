@@ -15,5 +15,6 @@ test ('Manager functions return correct values', () => {
     expect(manager.getName()).toEqual(manager.name);
     expect(manager.getId()).toEqual(manager.id);
     expect(manager.getEmail()).toEqual(manager.email);
+    expect(manager.getOffice()).toEqual(manager.office);
     expect(manager.getRole()).toEqual("Manager");
 });
