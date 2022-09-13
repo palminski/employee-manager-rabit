@@ -57,7 +57,7 @@ const generateCards = (team) => {
                         <h5 class="card-title text-light">${team[i].getName()}</h5>
                             <p class="card-text text-light">Employee ID: ${team[i].getId()}</p>
                             <a href="mailto: ${team[i].getEmail()}" class="card-text text-light">Email: ${team[i].getEmail()}</a>
-                            <a href="https://github.com/${team[i].getGithub()}" class="card-text text-light">Github: ${team[i].getGithub()}</a>
+                            <a href="https://github.com/${team[i].getGithub()}" target="_blank" class="card-text text-light">Github: ${team[i].getGithub()}</a>
                     </div>
                 </div>
             </div>
