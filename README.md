@@ -14,6 +14,7 @@ run >npm i and then enter command >node index.js on command line from project's 
 
 ## Usage
 Simply answer prompts and check the specified location when application is finished running
+sample of the application running can be viewed [here](https://drive.google.com/file/d/1U-wY1mN58ghzcpkD220CrHqd9MdBbOKN/view)
 
 ## Tests
 from root directory run >npm test
